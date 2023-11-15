@@ -1,6 +1,7 @@
 import Circle from "./Circle";
 
 function HeroSection() {
+
   return (
     <div className="HeroSection">
       <div id="header-intro">
@@ -14,7 +15,7 @@ function HeroSection() {
         height={"80px"}
         top={"10%"}
         right={"10%"}
-        delay={".5s"}
+        delay={".9s"}
         movement={"circleMove2"}
       />
       <Circle

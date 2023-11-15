@@ -23,7 +23,7 @@ body{
 }
 
 .HeroSection{
-  background-color: #0A192F;
+  background: linear-gradient(308deg, rgba(10,25,47,1) 0%, rgba(31,102,154,1) 100%);
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -109,11 +109,22 @@ body{
   80%{margin-right: 5px;}
 }
 
+.TestThing {
+  position: absolute;
+  border-radius: 100%;
+  animation-duration: 4s, 1s;
+  animation-iteration-count: infinite;
+  animation-name: circleMove1;
+  transition: 10s;
+  width: 100px;
+  height: 100px;
+}
+
 .Circle{
   position: absolute;
   border-radius: 100%;
   animation-duration: 4s, 1s;
   animation-iteration-count: infinite;
   animation-name: circleMove1;
-  transition: 2s;
+  transition: 10s;
 }
