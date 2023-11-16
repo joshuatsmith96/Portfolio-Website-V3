@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 interface Props{
+    id?: string,
     color: Number,
     width: any,
     height: any,
@@ -13,11 +14,12 @@ interface Props{
 }
 
 function Circle(props: Props){
+
     const [newOpacity, setNewOpacity] = useState("0")
 
-    window.addEventListener("load", (event) => {
+    window.addEventListener("load", () => {
         setNewOpacity("1")
-      });
+    });
 
     //---------STYLES-------------
     //Color
@@ -47,7 +49,7 @@ function Circle(props: Props){
     }
 
     return(
-        <div className="Circle" style={circleStyles}></div>
+        <div className="Circle" id={props.id} style={circleStyles} onClick={(e) => {console.log(e.target)}}></div>
     )
 }
 

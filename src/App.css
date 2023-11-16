@@ -22,6 +22,16 @@ body{
   height: 100%;
 }
 
+.content{
+  height: 100vh;
+}
+
+.text-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .HeroSection{
   background: linear-gradient(308deg, rgba(10,25,47,1) 0%, rgba(31,102,154,1) 100%);
   height: 100%;
@@ -109,22 +119,35 @@ body{
   80%{margin-right: 5px;}
 }
 
-.TestThing {
-  position: absolute;
-  border-radius: 100%;
-  animation-duration: 4s, 1s;
-  animation-iteration-count: infinite;
-  animation-name: circleMove1;
-  transition: 10s;
-  width: 100px;
-  height: 100px;
-}
-
 .Circle{
   position: absolute;
   border-radius: 100%;
   animation-duration: 4s, 1s;
   animation-iteration-count: infinite;
   animation-name: circleMove1;
-  transition: 10s;
+  transition: 5s;
+}
+
+#circ8{
+  visibility: hidden;
+}
+
+/* Mobile Circle Styles / Sizes */
+@media all and (min-width: 575px) {
+  .Circle{
+    transition: 5s;
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .Circle{
+    padding: 40px;
+    margin: 10px;
+  }
+
+  #circ8{
+    visibility: visible;
+  }
 }
