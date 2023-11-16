@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 
 interface Props{
     id?: string,
@@ -15,10 +15,10 @@ interface Props{
 
 function Circle(props: Props){
 
-    const [newOpacity, setNewOpacity] = useState("0")
+    // const [newOpacity, setNewOpacity] = useState("0")
 
     window.addEventListener("load", () => {
-        setNewOpacity("1")
+        // setNewOpacity("1")
     });
 
     //---------STYLES-------------
@@ -44,12 +44,11 @@ function Circle(props: Props){
         left: props.left,
         right: props.right,
         animationDelay: props.delay,
-        animationName: props.movement,
-        opacity: newOpacity
+        animationName: props.movement
     }
 
     return(
-        <div className="Circle" id={props.id} style={circleStyles} onClick={(e) => {console.log(e.target)}}></div>
+        <div className="Circle" id={props.id} style={circleStyles}></div>
     )
 }
 
