@@ -1,12 +1,20 @@
 import Circle from "./Circle";
 
 function HeroSection() {
+
+  window.addEventListener('load', function () {
+    document.querySelector("#cover")?.setAttribute("style", "opacity: 0")
+  })
+
   return (
     <div className="HeroSection">
       <div id="header-intro">
         <p>Hello, I'm</p>
         <br />
         <h1>Joshua</h1>
+      </div>
+      <div id="cover">
+
       </div>
       <div className="AllCircles">
         <Circle
@@ -57,7 +65,7 @@ function HeroSection() {
           top={"70%"}
           right={"-8%"}
           delay={"1.5s"}
-          movement={"circleMove3"}
+          movement={"circleMove1"}
         />
         <Circle
         id={"circ6"}
@@ -67,7 +75,7 @@ function HeroSection() {
           top={"30%"}
           left={"5%"}
           delay={"1.5s"}
-          movement={"circleMove1"}
+          movement={"circleMove3"}
         />
         <Circle
         id={"circ7"}
@@ -77,7 +85,7 @@ function HeroSection() {
           top={"45%"}
           left={"45%"}
           delay={"1.5s"}
-          movement={"circleMove1"}
+          movement={"circleMove2"}
         />
         <Circle
           id={"circ8"}
