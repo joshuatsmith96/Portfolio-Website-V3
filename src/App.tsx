@@ -1,13 +1,15 @@
 import './App.css'
 import HeroSection from './components/HeroSection/HeroSection'
-import ScrollEffects from './ScrollEffects'
-
+import "./PageScrollStyles.css"
+import reveal from './Reveal.tsx'
+import AboutMe from './components/AboutMe.tsx'
 
 function App() {
+  reveal()
   return (
     <div className='App'>
       <HeroSection />
-      <ScrollEffects />
+      <AboutMe></AboutMe>
       <div className="Spacer"></div>
     </div>
   )

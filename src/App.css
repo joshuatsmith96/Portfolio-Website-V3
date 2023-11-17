@@ -84,6 +84,31 @@ body{
   color: #64FFDA;
 }
 
+.aboutMe{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe h1{
+  font-size: 36px;
+}
+
+.aboutMe p{
+  font-size: 20px;
+  text-align: center;
+}
+
+#profile-image{
+  border: solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
 @keyframes twinkle{
   50%{opacity: .2;}
   100%{opacity: 1;}
