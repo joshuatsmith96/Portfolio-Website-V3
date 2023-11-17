@@ -47,6 +47,11 @@ body{
   height: 10000px;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 #cover{
   position: absolute;
   width: 100%;
@@ -55,7 +60,7 @@ body{
   background: linear-gradient(308deg, rgba(10,25,47,1) 0%, rgba(31,102,154,1) 100%);
   z-index: 1;
   opacity: 1;
-  transition: 7s;
+  animation: fadeIn 7s;
 }
 
 #header-intro{

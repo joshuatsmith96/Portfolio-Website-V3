@@ -2,10 +2,6 @@ import Circle from "./Circle";
 
 function HeroSection() {
 
-  window.addEventListener('load', function () {
-    document.querySelector("#cover")?.setAttribute("style", "opacity: 0")
-  })
-
   return (
     <div className="HeroSection">
       <div id="header-intro">
