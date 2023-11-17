@@ -99,14 +99,33 @@ body{
 
 .aboutMe p{
   font-size: 20px;
-  text-align: center;
+  padding: 15px;
 }
 
 #profile-image{
-  border: solid;
+  border-width: .5px;
+  box-shadow: 1px 1px 6px 1px;
   width: 200px;
   height: 200px;
   border-radius: 100%;
+  background-image: url("./assets/Images/Me.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.ParallaxSection{
+  margin-top: 50px;
+  height: 200px;
+}
+
+.resume-container{
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.resume-container h3{
+  color: #64FFDA;
 }
 
 @keyframes twinkle{
