@@ -1,0 +1,65 @@
+/********************** FADE IN ********************************/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*************************** FADE IN LEFT **********************************/
+
+@-webkit-keyframes showHide { /* Chrome, Safari */
+    0% {width:100%}
+    100% {width:50%}
+}
+@-moz-keyframes showHide { /* FF */
+    0% {width:100%}
+    100% {width:50%}
+}
+@-ms-keyframes showHide { /* IE10 */
+    0% {width:100%}
+    100% {width:50%}
+}
+@-o-keyframes showHide { /* Opera */
+    0% {width:100%}
+    100% {width:50%}
+}
+@keyframes showHide {
+    0% {width:100%}
+    100% {width:50%}
+}
+
+/***********************************************************************************************************/
+
+#header-intro p{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+}
+
+#header-intro h1{
+    -moz-animation: fadein 2s, showHide 1s ease-in alternate ; /* Firefox */
+    -webkit-animation: fadein 2s, showHide 1s ease-in alternate ; /* Safari and Chrome */
+    -ms-animation: fadein 2s, showHide 1s ease-in alternate ; /* IE10 */
+    -o-animation: fadein 2s, showHide 1s ease-in alternate ; /* Opera */
+    animation: fadein 2s, showHide 1s ease-in alternate;
+}

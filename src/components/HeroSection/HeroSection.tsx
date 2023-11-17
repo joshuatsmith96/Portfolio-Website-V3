@@ -1,4 +1,5 @@
 import Circle from "./Circle";
+import "../../AnimationStyles.css";
 
 function HeroSection() {
 
