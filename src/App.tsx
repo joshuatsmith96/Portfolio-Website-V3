@@ -15,7 +15,7 @@ function App() {
   return (
     <div className='App'>
       <HeroSection></HeroSection>
-      <Parallax strength={1500}>
+      <Parallax strength={2500}>
         <Background className="custom-bg">
             <img src={BackgroundImage} alt="fill murray" />
         </Background>

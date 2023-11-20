@@ -95,8 +95,8 @@ body{
 }
 
 .custom-bg{
-  background-position: center;
-  background-size: contain;
+  background-position: right;
+  background-size: cover;
 }
 
 .aboutMe h1{
