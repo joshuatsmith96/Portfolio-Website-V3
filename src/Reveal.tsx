@@ -1,5 +1,4 @@
 function reveal() {
-    console.log("HI")
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
