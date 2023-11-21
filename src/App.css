@@ -391,6 +391,19 @@ h1{
     height: 80px;
     width: 80px;
   }
+
+  #experience-header{
+    width: 280px;
+    padding-left: 60px;
+  }
+
+  .HireMe h3{
+    font-size: 24px;
+  }
+
+  .HireMe p{
+    font-size: 18px
+  }
 }
 
 
