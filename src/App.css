@@ -176,7 +176,7 @@ h1{
 }
 
 .ContactForm textarea{
-  width: 90%;
+  width: 96%;
   height: 150px;
   background-color: #171717;
   border-color: #C5C5C5;
@@ -399,13 +399,17 @@ h1{
   flex-direction: row;
 }
 
+.info{
+  margin-bottom: 18px;
+}
+
 #experience-info{
   margin-left: 20px;
 }
 
 #experience-info h2{
   color: #64FFDA;
-  margin-bottom: 7px;
+  font-size: 18px;
 }
 
 #experience-info p:last-child{
@@ -537,9 +541,14 @@ h1{
     font-size: 24px;
   }
 
-  .ViewResume a{
-    padding: 20px;
-    font-size: 18px;
+  #experience-info h2{
+    color: #64FFDA;
+    margin-bottom: 6px;
+    font-size: 1.5em;
+  }
+
+  .info{
+    margin-bottom: 0px;
   }
 }
 
