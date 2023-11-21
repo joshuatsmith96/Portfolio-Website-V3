@@ -225,6 +225,31 @@ h1{
   padding-left: 50px;
 }
 
+.HireMe{
+  color: white;
+  padding: 40px;
+  margin-top: 60px
+}
+
+.HireMe img{
+  margin-right: 20px;
+}
+
+.HireMe h3{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.HireMe p{
+  font-weight: 300;
+}
+
+.Reasons{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
 /************************** Experience Graph ***********************/
 .gc{
   height: 20px;

@@ -9,6 +9,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import AboutMe from './components/AboutMe.tsx'
 import MySkills from './components/MySkills.tsx'
 import Experience from './components/ExperienceSection/Experience.tsx'
+import HireMe from './components/HireMeSection/HireMe.tsx'
 //Images
 import BackgroundImageMobile from './assets/Images/webbackground-mobile.jpg'
 
@@ -24,6 +25,7 @@ function App() {
         <AboutMe/>
         <MySkills/>
         <Experience />
+        <HireMe />
         <div className="Spacer"></div>
     </Parallax>
     </div>
