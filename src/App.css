@@ -48,7 +48,7 @@ h1{
 }
 
 .Spacer{
-  height: 10000px;
+  height: 200px;
 }
 
 @keyframes fadeIn {
@@ -105,6 +105,7 @@ h1{
 .custom-bg{
   background-position: center;
   background-size: cover;
+  background-repeat: repeat;
 }
 
 .aboutMe h1{
@@ -307,6 +308,27 @@ h1{
   font-weight: 100;
 }
 
+.ViewResume{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ViewResume h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ViewResume a{
+  border: solid;
+  border-width: thin;
+  color: white;
+  padding: 10px;
+  background-color: rgb(180, 180, 180, .4);
+}
+
 /* Circle Styles */
 @keyframes circleMove1 {
   0%{margin-left: 5px;}
@@ -403,6 +425,15 @@ h1{
 
   .HireMe p{
     font-size: 18px
+  }
+
+  .ViewResume h3{
+    font-size: 24px;
+  }
+
+  .ViewResume a{
+    padding: 20px;
+    font-size: 18px;
   }
 }
 

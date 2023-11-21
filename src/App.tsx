@@ -10,6 +10,8 @@ import AboutMe from './components/AboutMe.tsx'
 import MySkills from './components/MySkills.tsx'
 import Experience from './components/ExperienceSection/Experience.tsx'
 import HireMe from './components/HireMeSection/HireMe.tsx'
+import ViewResume from './components/ViewResume.tsx'
+import ContactForm from './components/ContactForm.tsx'
 //Images
 import BackgroundImageMobile from './assets/Images/webbackground-mobile.jpg'
 
@@ -18,7 +20,7 @@ function App() {
   return (
     <div className='App'>
       <HeroSection></HeroSection>
-      <Parallax strength={3000}>
+      <Parallax strength={1000}>
         <Background className="custom-bg">
             <img src={BackgroundImageMobile} alt="fill murray" />
         </Background>
@@ -26,6 +28,8 @@ function App() {
         <MySkills/>
         <Experience />
         <HireMe />
+        <ViewResume />
+        <ContactForm />
         <div className="Spacer"></div>
     </Parallax>
     </div>
