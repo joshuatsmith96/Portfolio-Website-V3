@@ -214,6 +214,21 @@ h1{
   flex-direction: column;
 }
 
+.ProjectSection{
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #0E223F;
+  padding: 10px 5px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+.ProjectSection h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 @keyframes twinkle{
   50%{opacity: .2;}
   100%{opacity: 1;}

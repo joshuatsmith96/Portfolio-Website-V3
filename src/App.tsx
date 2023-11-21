@@ -13,6 +13,7 @@ import HireMe from './components/HireMeSection/HireMe.tsx'
 import ViewResume from './components/ViewResume.tsx'
 import ContactForm from './components/ContactForm.tsx'
 import Footer from './components/Footer.tsx'
+import ProjectSection from './components/ProjectSection/ProjectSection.tsx'
 //Images
 import BackgroundImageMobile from './assets/Images/webbackground-mobile.jpg'
 
@@ -28,6 +29,7 @@ function App() {
         <AboutMe/>
         <MySkills/>
         <Experience />
+        <ProjectSection />
         <HireMe />
         <ViewResume />
         <ContactForm />
