@@ -55,7 +55,7 @@ h1{
 }
 
 .Spacer{
-  height: 100px;
+  height: 10px;
 }
 
 @keyframes fadeIn {
@@ -308,6 +308,44 @@ h1{
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+}
+
+.Footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00122D;
+}
+
+.Footer p{
+  color: #BFBFBF;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icons{
+  background: rgb(78, 78, 78);
+  height: 60px;
+  width: 60px;
+  margin: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img{
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
 }
 
 /************************** Experience Graph ***********************/

@@ -12,6 +12,7 @@ import Experience from './components/ExperienceSection/Experience.tsx'
 import HireMe from './components/HireMeSection/HireMe.tsx'
 import ViewResume from './components/ViewResume.tsx'
 import ContactForm from './components/ContactForm.tsx'
+import Footer from './components/Footer.tsx'
 //Images
 import BackgroundImageMobile from './assets/Images/webbackground-mobile.jpg'
 
@@ -30,7 +31,7 @@ function App() {
         <HireMe />
         <ViewResume />
         <ContactForm />
-        <div className="Spacer"></div>
+        <Footer />
     </Parallax>
     </div>
   )
