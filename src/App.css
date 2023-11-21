@@ -157,7 +157,7 @@ h1{
 
 .ContactForm{
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 40px;
   color: white;
 }
 
@@ -172,15 +172,20 @@ h1{
   border-color: #C5C5C5;
   background-color: #171717;
   color: white;
+  border: 1px solid;
 }
 
 .ContactForm textarea{
-  width: 100%;
-  height: 200px;
+  width: 90%;
+  height: 150px;
   background-color: #171717;
   border-color: #C5C5C5;
   border-radius: 5px;
   color: white;
+  border: 1px solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 6px;
 }
 
 .ContactForm h2{
@@ -196,10 +201,12 @@ h1{
 .ContactForm input{
   background-color: #171717;
   border-color: #C5C5C5;
-  padding: 5px;
+  padding: 6px;
   border-radius: 5px;
   color: white;
   margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid;
 }
 
 .name-inputs{
@@ -288,7 +295,7 @@ h1{
 .HireMe{
   color: white;
   padding: 40px;
-  margin-top: 60px
+  margin-top: 40px
 }
 
 .HireMe img{
@@ -422,7 +429,9 @@ h1{
   border: solid;
   border-width: thin;
   color: white;
-  padding: 10px;
+  padding: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: rgb(180, 180, 180, .4);
 }
 
