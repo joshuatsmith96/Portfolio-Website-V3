@@ -18,6 +18,13 @@ h1{
   font-weight: 500;
 }
 
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #root{
   height: 100%;
 }
@@ -48,7 +55,7 @@ h1{
 }
 
 .Spacer{
-  height: 200px;
+  height: 100px;
 }
 
 @keyframes fadeIn {
@@ -146,6 +153,58 @@ h1{
 
 .resume-container h3{
   color: #64FFDA;
+}
+
+.ContactForm{
+  padding: 20px;
+  margin-top: 80px;
+  color: white;
+}
+
+.ContactForm button{
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: #C5C5C5;
+  background-color: #171717;
+  color: white;
+}
+
+.ContactForm textarea{
+  width: 100%;
+  height: 200px;
+  background-color: #171717;
+  border-color: #C5C5C5;
+  border-radius: 5px;
+  color: white;
+}
+
+.ContactForm h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ContactForm p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ContactForm input{
+  background-color: #171717;
+  border-color: #C5C5C5;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.name-inputs{
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes twinkle{
