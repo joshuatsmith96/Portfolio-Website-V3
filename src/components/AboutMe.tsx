@@ -10,10 +10,7 @@ function AboutMe() {
       <section>
         <div className="reveal aboutMe">
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Iusto non ut itaque sapiente, dolorum doloremque
-            dolore beatae deserunt, corporis numquam optio consectetur quia
-            alias et, ab quos. Eos, voluptatem a.
+            My name is Joshua Smith! I am a Web Designer and Developer, US Army Veteran, and avid cheese eater. This is just some filler text until I figure out what to put here (my wife told me lorem ipsum gives her a mild stroke).
           </p>
         </div>
       </section>
