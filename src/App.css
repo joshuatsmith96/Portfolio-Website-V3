@@ -375,3 +375,24 @@ h1{
     visibility: visible;
   }
 }
+
+/********************* MOBILE VIEWS **************************/
+
+@media all and (min-width: 360px) {
+  .aboutMe h1{
+    font-size: 40px;
+  }
+
+  .aboutMe p{
+    font-size: 25px;
+  }
+
+  .SkillTile img{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+
+/********************* TABLET VIEWS **************************/
+
