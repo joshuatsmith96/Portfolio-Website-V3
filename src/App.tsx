@@ -7,19 +7,23 @@ import { Parallax, Background } from 'react-parallax'
 //Sections
 import HeroSection from './components/HeroSection/HeroSection'
 import AboutMe from './components/AboutMe.tsx'
+import MySkills from './components/MySkills.tsx'
+import Experience from './components/ExperienceSection/Experience.tsx'
 //Images
-import BackgroundImage from './assets/Images/webbackgroundv2.jpg'
+import BackgroundImageMobile from './assets/Images/webbackground-mobile.jpg'
 
 function App() {
   reveal()
   return (
     <div className='App'>
       <HeroSection></HeroSection>
-      <Parallax strength={2500}>
+      <Parallax strength={3000}>
         <Background className="custom-bg">
-            <img src={BackgroundImage} alt="fill murray" />
+            <img src={BackgroundImageMobile} alt="fill murray" />
         </Background>
         <AboutMe/>
+        <MySkills/>
+        <Experience />
         <div className="Spacer"></div>
     </Parallax>
     </div>

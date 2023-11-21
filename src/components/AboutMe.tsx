@@ -1,13 +1,9 @@
 function AboutMe() {
   return (
-    <div>
+    <div className="aboutMeContainer">
       <section>
         <div className="reveal aboutMe">
           <h1>A little about me</h1>
-        </div>
-      </section>
-      <section>
-        <div className="reveal aboutMe">
           <div id="profile-image"></div>
         </div>
       </section>
