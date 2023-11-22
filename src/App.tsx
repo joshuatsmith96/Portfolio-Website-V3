@@ -1,7 +1,7 @@
 //Scripts
 import reveal from './Reveal.tsx'
 import Home from './pages/Home.tsx'
-import Project from './pages/ProjectPage.tsx'
+import ProjectPage from './pages/ProjectPage.tsx'
 import { Routes, Route } from "react-router-dom"
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/Project" Component={Project} />
+        <Route path="/Portfolio-Website-V3" Component={Home} />
+        <Route path="/Portfolio-Website-V3/Project" Component={ProjectPage} />
       </Routes>
     </div>
   )

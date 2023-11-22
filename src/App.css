@@ -258,6 +258,10 @@ h1{
   margin-bottom: 80px;
 }
 
+.Project h1{
+  margin-top: 20px;
+}
+
 .Project img{
   margin-bottom: 25px;
 }
