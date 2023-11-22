@@ -12,6 +12,7 @@ html{
 
 body{
   height: 100%;
+  background-color:#00122D;
 }
 
 h1{
@@ -227,6 +228,32 @@ h1{
   color: white;
   text-align: center;
   margin-bottom: 20px;
+}
+
+#project-section-header{
+  margin-bottom: 50px;
+}
+
+.Project{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.Project img{
+  margin-bottom: 25px;
+}
+
+.Project p{
+  padding: 10px;
+}
+
+.Project img{
+  width: 177px;
+  height: 355px;
 }
 
 @keyframes twinkle{

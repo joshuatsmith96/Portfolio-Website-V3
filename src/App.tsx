@@ -34,6 +34,7 @@ function App() {
         <ViewResume />
         <ContactForm />
         <Footer />
+        <div className="Spacer"></div>
     </Parallax>
     </div>
   )
