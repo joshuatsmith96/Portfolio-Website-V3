@@ -10,6 +10,10 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 
+button{
+  font-family: 'Open Sans', sans-serif;
+}
+
 body{
   height: 100%;
   background-color:#00122D;
@@ -24,6 +28,12 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.close-button{
+  float: right;
+  padding: 15px;
 }
 
 #root{
@@ -31,6 +41,10 @@ h1{
 }
 
 .App{
+  height: 100%;
+}
+
+.Home{
   height: 100%;
 }
 
@@ -127,6 +141,7 @@ h1{
   font-size: 20px;
   padding: 3px;
   margin-top: 20px;
+  text-align: center;
   color: white;
 }
 
@@ -249,11 +264,24 @@ h1{
 
 .Project p{
   padding: 10px;
+  text-align: center;
 }
 
 .Project img{
   width: 177px;
   height: 355px;
+}
+
+.Project button{
+  font-size: 18px;
+  padding: 10px 50px;
+  font-weight: 300;
+  border: solid;
+  border-color: rgb(100,255,218);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(100,255,218);
+  border-radius: 5px;
+  margin-top: 30px;
 }
 
 @keyframes twinkle{
@@ -396,6 +424,113 @@ h1{
   width: 40px;
   border-radius: 10px;
 }
+
+/************************** Project Page ***************************/
+/* Menu Open Animation */
+
+/* Open */
+
+@-webkit-keyframes Open { /* Chrome, Safari */
+  0%{visibility: visible;}
+  100%{height: 100%; width: 100%; top: 0; left: 0; visibility: visible;}
+}
+@-moz-keyframes Open { /* FF */
+  0%{visibility: visible;}
+  100%{height: 100%; width: 100%; top: 0; left: 0; visibility: visible;}
+}
+@-ms-keyframes Open { /* IE10 */
+  0%{visibility: visible;}
+  100%{height: 100%; width: 100%; top: 0; left: 0; visibility: visible;}
+}
+@-o-keyframes Open { /* Opera */
+  0%{visibility: visible;}
+  100%{height: 100%; width: 100%; top: 0; left: 0; visibility: visible;}
+}
+@keyframes OpenMenu {
+  0%{visibility: visible;}
+  100%{height: 100%; width: 100%; top: 0; left: 0; visibility: visible;}
+}
+
+/* Close */
+@keyframes CloseMenu {
+  0%{height: 100%; width: 100%; top: 0%; left: 0%; visibility: visible}
+  99.9%{height: 0%; width: 0%; top: 50%; left: 50%;}
+  100%{visibility: hidden;}
+}
+
+.ProjectPage{
+  position: fixed;
+  height: 0%;
+  width: 0%;
+  top: 50%;
+  left: 50%;
+  border: solid;
+  background-color: rgb(23,23,23);
+  visibility: hidden;
+  z-index: 20;
+  overflow: scroll;
+}
+
+.ProjectPage h1{
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+
+
+.project-page-enabled{
+  -webkit-animation: OpenMenu 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: OpenMenu 2s; /* Firefox < 16 */
+     -ms-animation: OpenMenu 2s; /* Internet Explorer */
+      -o-animation: OpenMenu 2s; /* Opera < 12.1 */
+         animation: OpenMenu 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: OpenMenu;
+  transition: 5s;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.project-page-disabled{
+  -webkit-animation: CloseMenu 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: CloseMenu 2s; /* Firefox < 16 */
+     -ms-animation: CloseMenu 2s; /* Internet Explorer */
+      -o-animation: CloseMenu 2s; /* Opera < 12.1 */
+         animation: CloseMenu 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: CloseMenu;
+  transition: 5s;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.stop-scrolling{
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill-badge-container{
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "auto auto auto";
+  align-items: center;
+  justify-content: center;
+}
+
+.SkillBadge p{
+  background-color: rgb(81, 197, 169, .75);
+  color: white;
+  width: fit-content;
+  padding: 5px 20px;
+  margin: 10px 6px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
 
 /************************** Experience Graph ***********************/
 .gc{
@@ -558,7 +693,7 @@ h1{
   }
 
   .aboutMe p{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .SkillTile img{

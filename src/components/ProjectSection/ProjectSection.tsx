@@ -7,7 +7,7 @@ function ProjectSection(){
     return(
         <div className="ProjectSection">
             <h1 id="project-section-header">Projects</h1> 
-            <Project projectName={"Portfolio Website"} projectText={"Portfolio description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, illo. Totam dolor autem a alias ad doloremque nesciunt, libero, magni sequi nam nisi suscipit nobis non facilis quidem excepturi exercitationem?"} src={PortfolioThumbnail} alt={"Portfolio Website Thumbnail"}/>
+            <Project projectName={"Portfolio Website"} projectText={"This project is the website you are currently viewing, my Portfolio Website! If you're interested in the inner workings of this website, please click the button below."} src={PortfolioThumbnail} alt={"Portfolio Website Thumbnail"}/>
             <Project projectName={"Project Coming Soon"} projectText={"Project Coming Soon"} src={ComingSoon} alt={"Project Coming Soon"}/>
             <Project projectName={"Project Coming Soon"} projectText={"Project Coming Soon"} src={ComingSoon} alt={"Project Coming Soon"}/>
             <Project projectName={"Project Coming Soon"} projectText={"Project Coming Soon"} src={ComingSoon} alt={"Project Coming Soon"}/>
