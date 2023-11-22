@@ -25,7 +25,7 @@ function ProjectSection() {
       <Project
       projectDescription={""}
         projectName={"Project Coming Soon"}
-        languages={["HTML", "CSS", "JS", "React"]}
+        languages={["None"]}
         projectText={"Project Coming Soon"}
         src={ComingSoon}
         alt={"Project Coming Soon"}
@@ -33,7 +33,7 @@ function ProjectSection() {
       <Project
       projectDescription={""}
         projectName={"Project Coming Soon"}
-        languages={["HTML", "CSS", "JS", "React"]}
+        languages={["None"]}
         projectText={"Project Coming Soon"}
         src={ComingSoon}
         alt={"Project Coming Soon"}
@@ -41,7 +41,7 @@ function ProjectSection() {
       <Project
       projectDescription={""}
         projectName={"Project Coming Soon"}
-        languages={["HTML", "CSS", "JS", "React"]}
+        languages={["None"]}
         projectText={"Project Coming Soon"}
         src={ComingSoon}
         alt={"Project Coming Soon"}
