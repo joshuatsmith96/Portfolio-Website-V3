@@ -179,16 +179,15 @@ h1{
 
 .ContactForm button{
   font-size: 16px;
-  padding: 5px;
+  padding: 15px;
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Open Sans', sans-serif;
   margin-top: 20px;
   border-radius: 5px;
-  border-color: #C5C5C5;
   background-color: #171717;
-  color: white;
-  border: 0px solid;
+  color: #64FFDA;
+  border: 1px solid #64FFDA;
 }
 
 .ContactForm textarea{
@@ -708,6 +707,8 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #3f84ec;
+  padding: 50px 0px;
 }
 
 .ViewResume h3{

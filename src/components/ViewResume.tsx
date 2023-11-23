@@ -1,6 +1,6 @@
 function ViewResume(){
     return(
-        <div className="reveal ViewResume">
+        <div className="ViewResume">
             <h3>Want To Learn More?</h3>
             <a>View Resume</a>
         </div>
