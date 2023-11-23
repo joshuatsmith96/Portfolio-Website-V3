@@ -11,11 +11,12 @@ interface Props{
 }
 
 function Project(props: Props){
+
     const projectdata = {
         name: props.projectName, 
         text: props.projectText,
         languages: props.languages,
-        src: props.src
+        src: props.src,
     }
 
     return(

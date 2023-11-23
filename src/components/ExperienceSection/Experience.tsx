@@ -25,22 +25,16 @@ function Experience() {
               <p>2021 - Current</p>
               <p>HTML, CSS, JavaScript, Python</p>
             </div>
-            <br />
-            <br />
             <div className="info reveal">
               <h2>Online Tutoring</h2>
               <p>2019 - 2021</p>
               <p>HTML, CSS, JavaScript</p>
             </div>
-            <br />
-            <br />
             <div className="info reveal">
               <h2>Anoka Technical College</h2>
               <p>2019 - 2021</p>
               <p>HTML, CSS, JavaScript, Python</p>
             </div>
-            <br />
-            <br />
             <div className="info reveal">
               <h2>US Army (25Q)</h2>
               <p>2015 - 2019</p>
