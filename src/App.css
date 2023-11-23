@@ -626,6 +626,11 @@ h1{
   border-width: thin;
 }
 
+.thumbnail-container img{
+  width: 120px;
+  height: auto;
+}
+
 
 
 /************************** Experience Graph ***********************/
@@ -834,6 +839,32 @@ h1{
 
   .ContactForm input{
     padding: 15px 10px
+  }
+
+  .project-button{
+    font-size: 20px;
+    padding: 15px 25px;
+    width: 300px;
+  }
+
+  .return-button{
+    padding: 15px 25px;
+    font-size: 20px;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .thumbnail-container{
+    width: 400px;
+    height: 400px;
+  }
+
+  .thumbnail-container img{
+    width: 180px;
+  }
+
+  .skill-badge-languages{
+    grid-template-areas: "auto auto auto auto";
   }
 }
 

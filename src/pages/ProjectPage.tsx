@@ -27,7 +27,7 @@ function ProjectPage() {
         <Circle color={2} width={"160px"} height={"160px"} top={"-50px"} left={"-50px"} movement={"none"} />
         <Circle color={4} width={"80px"} height={"80px"} top={"50px"} right={"-20px"} movement={"none"} />
         <div className="thumbnail-container">
-          <img src={imgSrc} alt="" style={{ width: "120px", height: "auto" }} />
+          <img src={imgSrc} alt="" />
           <Circle color={4} width={"75%"} height={"75%"} movement={"none"} top={"20px"} zindex={"-20"} />
         </div>
         <h1>{name}</h1>
