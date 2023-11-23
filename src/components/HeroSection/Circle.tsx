@@ -12,6 +12,7 @@ interface Props {
   delay?: any;
   movement?: any;
   opacity?: any;
+  zindex?: any;
 }
 
 
@@ -28,6 +29,7 @@ function Circle(props: Props) {
   let delay = props.delay;
   let movement = props.movement;
   let opacity = props.opacity;
+  let zindex = props.zindex;
 
   //------------------------------------------------------------------------------------//
 
@@ -56,6 +58,7 @@ function Circle(props: Props) {
     animationDelay: delay,
     animationName: movement,
     opacity: opacity,
+    zIndex: zindex
   };
 
   return <div className="Circle" id={id} style={circleStyles} onClick={(e) => {console.log(e)}}></div>;
