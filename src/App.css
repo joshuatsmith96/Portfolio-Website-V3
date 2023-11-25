@@ -354,7 +354,7 @@ h1{
 
 #experience-header{
   background-color: rgb(23, 50, 90, .8);
-  width: 200px;
+  width: 80%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px;
@@ -812,7 +812,6 @@ h1{
   }
 
   #experience-header{
-    width: 280px;
     padding-left: 60px;
   }
 
