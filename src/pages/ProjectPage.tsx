@@ -1,6 +1,6 @@
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom";
 import SkillBadge from "../components/ProjectSection/SkillBadge";
-import Circle from '../components/HeroSection/Circle'
+import Footer from "../components/Footer";
 
 function ProjectPage() {
   window.scrollTo(0, 0);
@@ -10,45 +10,65 @@ function ProjectPage() {
   let name = data.name;
   let languages = data.languages;
   let imgSrc = data.src;
+  let projectdesc = data.projectdesc;
   let allLanguages = languages.map((x: any) => {
-    return (
-      <SkillBadge text={x} />
-    )
-  })
+    return <SkillBadge text={x} />;
+  });
+  let wireframeurl = data.wireframeurl;
+  let codeurl = data.codeurl;
+  let siteurl = data.siteurl;
+
+  let allUrls = [wireframeurl, codeurl, siteurl];
+
+  let projectbutton = allUrls.map((url: any) => {
+    let buttonlabel = "";
+
+    if (url != undefined) {
+      if (url.includes("github.io") === true) {
+        buttonlabel = "View Site";
+      } else if (url.includes("github.com")) {
+        buttonlabel = "View Code";
+      } else if (url.includes("figma")) {
+        buttonlabel = "View Wireframe";
+      } else {
+        buttonlabel = "Button";
+      }
+      return (
+        <a href={url} className="project-button" target="_blank">
+          {buttonlabel}
+        </a>
+      );
+    }
+  });
 
   const goBack = () => {
     history.back();
-  }
+  };
 
   return (
-    <div className='Project'>
+    <div className="ProjectPage">
       <div className="project-hero">
-        <a id="project-hero-goback" onClick={goBack}>&#9001; Back</a>
-        <Circle color={2} width={"160px"} height={"160px"} top={"-50px"} left={"-50px"} movement={"none"} />
-        <Circle color={4} width={"80px"} height={"80px"} top={"50px"} right={"-20px"} movement={"none"} />
-        <div className="thumbnail-container">
+        <div className="project-hero-image">
           <img src={imgSrc} alt="" />
-          <Circle color={4} width={"75%"} height={"75%"} movement={"none"} top={"20px"} zindex={"-20"} />
         </div>
-        <h1>{name}</h1>
-        <div className="skill-badge-container">
-          <p>Languages used</p>
-          <div className="skill-badge-languages">
-          {allLanguages}
+        <div className="project-page-content">
+          <h1>{name}</h1>
+          <div className="skill-badge-container">
+            <p>Languages used</p>
+            <div className="skill-badge-languages">{allLanguages}</div>
           </div>
-        </div>
-        <div className="project-description-container">
-          <p>Example description goes here</p>
+          <div className="project-description-container">
+            <p>{projectdesc}</p>
+          </div>
         </div>
       </div>
       <div className="project-buttons">
-      <a className="project-button" href="">View Wireframe</a>
-      <a className="project-button" href="">View Code</a>
-      <a className="project-button" href="">View Site</a>
-      <a className="return-button" onClick={goBack} >Return To Projects</a>
+        {projectbutton}
+        <a className="return-button" onClick={goBack}>Return To Projects</a>
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default ProjectPage
+export default ProjectPage;

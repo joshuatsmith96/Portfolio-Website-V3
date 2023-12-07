@@ -1,31 +1,44 @@
 import { Link } from 'react-router-dom'
 
 
-interface Props{
+interface Props {
     src: any,
     alt: string,
     projectName: string,
     projectText: string,
     projectDescription: string,
-    languages: any
+    languages: any,
+    wireframeurl?: any,
+    codeurl?: any,
+    siteurl?: any,
 }
 
-function Project(props: Props){
+function Project(props: Props) {
 
     const projectdata = {
-        name: props.projectName, 
+        name: props.projectName,
         text: props.projectText,
         languages: props.languages,
         src: props.src,
+        wireframeurl: props.wireframeurl,
+        codeurl: props.codeurl,
+        siteurl: props.siteurl,
+        projectdesc: props.projectDescription
     }
 
-    return(
+    return (
         <div className="Project-Container">
             <div className="reveal Project">
-            <img src={props.src} alt={props.alt}/>
-            <h1>{props.projectName}</h1>
-            <p>{props.projectText}</p>
-            <Link className='Project-Button' to={"/Portfolio-Website-V3/Project"} state={{data: projectdata}}>View Project</Link>
+                <div className="project-img-container">
+                    <img src={props.src} alt={props.alt} />
+                </div>
+                <div className="project-info">
+                    <h1>{props.projectName}</h1>
+                    <p>{props.projectText}</p>
+                    <div className="project-button-container">
+                    <Link className='Project-Button' to={"/Portfolio-Website-V3/Project"} state={{ data: projectdata }}>View Project</Link>
+                    </div>
+                </div>
             </div>
         </div>
     )

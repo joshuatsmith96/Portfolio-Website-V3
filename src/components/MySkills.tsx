@@ -16,7 +16,7 @@ function MySkills() {
   return (
     <div className="MySkills">
       <section>
-        <div className="reveal aboutMe">
+        <div className="reveal aboutMe skills-mobile">
           <h1>My Skills</h1>
           <div className="Skills">
             <SkillTile src={html} alt={"html"} />
@@ -28,6 +28,24 @@ function MySkills() {
             <SkillTile src={photoshop} alt={"Photoshop"} />
             <SkillTile src={illustrator} alt={"illustrator"} />
             <SkillTile src={indesign} alt={"indesign"} />
+          </div>
+        </div>
+        <div className="reveal aboutMe skills-desktop">
+          <h1>My Skills</h1>
+          <div className="Skills">
+            <div className="skills-seperate">
+            <SkillTile src={html} alt={"html"} />
+            <SkillTile src={css} alt={"css"} />
+            <SkillTile src={javascript} alt={"javascript"} />
+            <SkillTile src={python} alt={"python"} />
+            <SkillTile src={react} alt={"react"} />
+            </div>
+            <div className="skills-seperate">
+            <SkillTile src={github} alt={"git hub"} />
+            <SkillTile src={photoshop} alt={"Photoshop"} />
+            <SkillTile src={illustrator} alt={"illustrator"} />
+            <SkillTile src={indesign} alt={"indesign"} />
+            </div>
           </div>
         </div>
       </section>

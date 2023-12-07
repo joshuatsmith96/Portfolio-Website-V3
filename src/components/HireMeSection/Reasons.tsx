@@ -6,7 +6,7 @@ interface Props{
 function Reasons(props: Props){
     return(
         <div className="reveal Reasons">
-            <img src={props.img} alt="" style={{width: "20px", height: "20px"}}/>
+            <img src={props.img} alt=""/>
             <p>{props.reason}</p>
         </div>
     )

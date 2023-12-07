@@ -3,7 +3,7 @@ import Dots from "./Dots";
 function Experience() {
   return (
     <div className="Experience">
-      <div className="reveal">
+      <div className="reveal experience-header-container">
         <h1 id="experience-header">Work Experience</h1>
       </div>
       <div id="full-experience-container">
@@ -19,7 +19,7 @@ function Experience() {
               <div className="reveal gc graph-circle"></div>
             </div>
           </div>
-          <div id="experience-info">
+          <div className="experience-info">
             <div className="info reveal">
               <h2>Daily Printing</h2>
               <p>2021 - Current</p>

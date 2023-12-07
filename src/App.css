@@ -133,7 +133,7 @@ h1{
 .aboutMe h1{
   font-size: 28px;
   color: white;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -154,6 +154,8 @@ h1{
   background-image: url("./assets/Images/Me.jpg");
   background-position: center;
   background-size: cover;
+  border: solid;
+  border-color: #64FFDA;
 }
 
 .ParallaxSection{
@@ -244,6 +246,13 @@ h1{
   margin-bottom: 20px;
 }
 
+.project-page-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #project-section-header{
   margin-bottom: 50px;
 }
@@ -285,6 +294,14 @@ h1{
   color: rgb(100,255,218);
   border-radius: 5px;
   margin-top: 30px;
+  text-decoration: none;
+  transition: .7s;
+}
+
+.Project-Button:hover{
+  background-color: rgb(100,255,218);
+  color: rgb(61, 61, 61);
+  letter-spacing: 5px;
 }
 
 @keyframes twinkle{
@@ -354,11 +371,12 @@ h1{
 
 #experience-header{
   background-color: rgb(23, 50, 90, .8);
-  width: 80%;
+  width: 240px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 #experience-header h1{
@@ -428,6 +446,12 @@ h1{
   border-radius: 10px;
 }
 
+.thumbnail-container img{
+  border: solid;
+  width: 177px;
+  height: 355px;
+}
+
 /************************** Project Page ***************************/
 /* Menu Open Animation */
 
@@ -459,24 +483,6 @@ h1{
   0%{height: 100%; width: 100%; top: 0%; left: 0%; visibility: visible}
   99.9%{height: 0%; width: 0%; top: 50%; left: 50%;}
   100%{visibility: hidden;}
-}
-
-.ProjectPage{
-  position: fixed;
-  height: 0%;
-  width: 0%;
-  top: 50%;
-  left: 50%;
-  border: solid;
-  background-color: rgb(23,23,23);
-  visibility: hidden;
-  z-index: 20;
-  overflow: scroll;
-}
-
-.ProjectPage h1{
-  margin-bottom: 0px;
-  margin-top: 20px;
 }
 
 
@@ -511,15 +517,11 @@ h1{
   -webkit-animation-fill-mode: forwards;
 }
 
-.stop-scrolling{
-  height: 100%;
-  overflow: hidden;
-}
-
 .skill-badge-container p{
   padding: 0px;
   margin: 0px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .skill-badge-languages{
@@ -542,47 +544,36 @@ h1{
 
 .project-hero{
   position: relative;
+  padding-top: 700px;
   width: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.thumbnail-container{
-  position: relative;
-  margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
-}
-
-#project-hero-goback{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  text-decoration: none;
   color: white;
-  z-index: 20;
-  font-size: 18px;
 }
 
 .project-description-container{
   background: #0B1B34;
-  width: 95%;
-  margin: 10px;
+  width: 80%;
   height: 300px;
+  padding: 10px;
 }
 
 .project-description-container p{
   text-align: left;
   font-size: 20px;
   font-weight: 300;
+  color: white;
+}
+
+.project-hero-image{
+  position: relative;
+}
+
+.project-hero-image img{
+  width: 171px;
+  height: 355px;
 }
 
 #languages-header{
@@ -611,6 +602,14 @@ h1{
   margin-top: 50px;
 }
 
+.project-buttons a{
+  transition: .7s;
+}
+
+.project-buttons a:hover{
+  letter-spacing: 5px;
+}
+
 .return-button{
   margin-top: 40px;
   background-color: #64FFDA;
@@ -623,6 +622,13 @@ h1{
   font-weight: 400;
   border-radius: 10px;
   border-width: thin;
+  transition: .7s;
+}
+
+.return-button:hover{
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 .thumbnail-container img{
@@ -651,6 +657,10 @@ h1{
 
 #experience-graph{
   margin-left: 20px;
+}
+
+#about-me-header2{
+  display: none;
 }
 
 #graph-dots{
@@ -688,16 +698,16 @@ h1{
   margin-bottom: 50px;
 }
 
-#experience-info{
+.experience-info{
   margin-left: 20px;
 }
 
-#experience-info h2{
+.experience-info h2{
   color: #64FFDA;
   font-size: 18px;
 }
 
-#experience-info p:last-child{
+.experience-info p:last-child{
   font-weight: 100;
 }
 
@@ -716,6 +726,18 @@ h1{
   margin-bottom: 20px;
 }
 
+.skills-seperate{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-desktop .Skills{
+  display: flex;
+  flex-direction: column;
+}
+
 .ViewResume a{
   border: solid;
   border-width: thin;
@@ -724,6 +746,42 @@ h1{
   padding-left: 40px;
   padding-right: 40px;
   background-color: rgb(180, 180, 180, .4);
+}
+
+.project-page-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Reasons img{
+  width: 20px;
+  height: 20px;
+}
+
+.hire-reasons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:Center;
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectPage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Circle Styles */
@@ -776,7 +834,21 @@ h1{
 }
 
 /* Mobile Circle Styles / Sizes */
+@media all and (min-width: 400px){
+  .SkillBadge P{
+    width: 75%;
+  }
+
+  .project-description-container{
+    width: 75%;
+  }
+}
+
 @media all and (min-width: 575px) {
+  .SkillBadge p{
+    margin: 10px 20px;
+  }
+
   .Circle{
     transition: 5s;
     margin: 10px;
@@ -809,10 +881,12 @@ h1{
   .SkillTile img{
     height: 80px;
     width: 80px;
+    margin: 10px;
   }
 
   #experience-header{
-    padding-left: 60px;
+    width: 300px;
+    font-size: 30px;
   }
 
   .HireMe h3{
@@ -827,7 +901,7 @@ h1{
     font-size: 24px;
   }
 
-  #experience-info h2{
+  .experience-info h2{
     color: #64FFDA;
     margin-bottom: 6px;
     font-size: 1.5em;
@@ -841,6 +915,10 @@ h1{
     padding: 15px 10px
   }
 
+  .skills-desktop{
+    display: none;
+  }
+
   .project-button{
     font-size: 20px;
     padding: 15px 25px;
@@ -852,6 +930,10 @@ h1{
     font-size: 20px;
     width: 300px;
     margin-bottom: 50px;
+  }
+
+  #about-me-header2{
+    text-align: left;
   }
 
   .thumbnail-container{
@@ -868,6 +950,464 @@ h1{
   }
 }
 
+@media all and (min-width: 500px){
+  #experience-header{
+    width: 420px;
+    border-radius: 10px;
+  }
+  .experience-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-/********************* TABLET VIEWS **************************/
+@media all and (min-width: 600px) {
+  .experience-info h2{
+    font-size: 40px;
+  }
+  .Experience h1{
+    font-size: 45px;
+  }
+  .Experience p{
+    font-size: 25px;
+  }
+  .SkillTile img{
+    margin: 10px;
+  }
+  .aboutMe p{
+    font-size: 25px;
+  }
+  #experience-graph{
+    margin-left: 30px;
+  }
+  .graph-circle-current{
+    height: 40px;
+    width: 40px;
+  }
+  .graph-circle{
+    height: 40px;
+    width: 40px;
+  }
+  .dot{
+    height: 8px;
+    width: 8px;
+    margin: 10px;
+  }
+  .info{
+    margin-bottom: 100px;
+  }
+  #experience-header{
+    font-size: 44px;
+    width: 450px;
+    padding: 20px 50px 20px 20px;
+  }
+
+  #header-intro p{
+    font-size: 30px;
+  }
+
+  #header-intro h1{
+    font-size: 80px;
+  }
+
+  .Project p{
+    font-size: 25px;
+    padding: 10px 100px;
+  }
+
+  .Project h1{
+    font-size: 45px;
+  }
+
+  .aboutMe p{
+    font-size: 22px;
+  }
+
+  #profile-image{
+    width: 250px;
+    height: 250px;
+  }
+  #project-section-header{
+    font-size: 65px;
+  }
+
+  .HireMe h3{
+    font-size: 50px;
+  }
+
+  .Reasons p{
+    font-size: 28px;
+  }
+
+  .Reasons img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .ViewResume h3{
+    font-size: 35px;
+  }
+
+  .ViewResume a{
+    font-size: 23px;
+  }
+
+  .ContactForm h2{
+    font-size: 45px;
+  }
+
+  .ContactForm p{
+    font-size: 22px;
+  }
+
+  .ContactForm input{
+    font-size: 20px;
+  }
+
+  .ContactForm textarea{
+    font-size: 20px;
+  }
+
+  .ContactForm button{
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .icons img{
+    width: 55px;
+    height: auto;
+  }
+
+  .icons{
+    padding: 40px;
+  }
+
+  .Footer p{
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 800px){
+
+  .project-hero{
+    padding-top: 800px;
+  }
+  .project-hero h1{
+    font-size: 48px;
+  }
+
+  .skill-badge-container p{
+    font-size: 22px;
+  }
+
+  .project-description-container p{
+    font-size: 22px;
+  }
+
+  .project-buttons a{
+    font-size: 30px;
+    width: 500px
+  }
+
+  .return-button{
+    width: 500px;
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 900px){
+  .ContactForm input{
+    width: 600px;
+  }
+
+  .ContactForm textarea{
+    width: 600px;
+  }
+
+  .ContactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutMeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-me-header2{
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  #about-me-header1{
+    display: none;
+  }
+
+  #about-me-image-and-title{
+    flex: 1;
+  }
+
+  #about-me-info{
+    flex: 2;
+  }
+
+  .aboutMe p{
+    text-align: left;
+  }
+
+  #profile-image{
+    height: 300px;
+    width: 300px;
+    margin-right: 50px
+  }
+
+  .skills-mobile{
+    display: none;
+  }
+
+  .skills-desktop{
+    display: flex;
+  }
+
+  .MySkills{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  #experience-graph-container{
+    justify-content: center;
+  }
+
+  .Project{
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .Project:first-child{
+    margin-top: 150px;
+  }
+
+  .project-img-container{
+    margin-left: 40px;
+    flex: 1;
+  }
+
+  .project-info{
+    flex: 2;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .project-info p{
+    text-align: left;
+    padding: 10px 10px;
+    width: 100%;
+  }
+
+  .project-info h1{
+    width: 100%;
+    text-align: left;
+  }
+
+  .project-button-container{
+    padding: 10px;
+    width: 100%;
+  }
+
+  #experience-header{
+    padding: 15px 0px;
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 1100px){
+  .project-buttons{
+    display: grid;
+    grid-template-columns:max-content;
+    gap: 15px;
+  }
+
+  .project-description-container{
+    width: 470px;
+    padding: 15px;
+  }
+
+  .project-hero{
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+
+  .project-hero-image{
+    margin-left: 10%;
+    flex: 1;
+  }
+
+  .project-hero-image img{
+    width: 300px;
+    height: auto;
+  }
+
+  .project-page-content{
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+  }
+}
+
+@media all and (min-width: 1300px){
+  
+  .project-page-content h1{
+    font-size: 55px;
+  }
+
+  .skill-badge-container p{
+    font-size: 28px;
+  }
+
+  .project-description-container p{
+    font-size: 24px;
+  }
+
+  .project-description-container{
+    width: 600px
+  }
+
+  .skill-badge-languages p{
+    font-size: 20px
+  }
+}
+
+@media all and (min-width: 1372px) {
+  #profile-image{
+    width: 400px;
+    height: 400px;
+  }
+
+  .aboutMeContainer{
+    padding: 10px 50px;
+  }
+
+  #about-me-header2{
+    font-size: 60px;
+  }
+
+  #about-me-info p{
+    font-size: 28px;
+  }
+
+  .skills-desktop h1{
+    font-size: 60px;
+  }
+
+  .SkillTile img{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+  }
+
+  #experience-header{
+    font-size: 60px;
+  }
+}
+
+
+
+@media all and (min-width: 1450px){
+  .project-img-container img{
+    width: 300px;
+    height: 622px;
+  }
+
+  .Project{
+    align-items: start;
+  }
+
+  .project-info h1{
+    font-size: 60px;
+  }
+
+  .project-info p{
+    font-size: 32px;
+  }
+
+  .Project-Button{
+    font-size: 32px;
+  }
+
+  .project-hero{
+    padding-top: 600px;
+  }
+
+  .project-page-content{
+    margin-right: 15%;
+  }
+  .project-hero-image{
+    margin-left: 15%
+  }
+}
+
+@media all and (min-width: 1450px){
+  .project-hero h1{
+    font-size: 50px;
+  }
+
+  .project-hero p{
+    font-size: 25px;
+  }
+
+  .project-button{
+    font-size: 28px;
+  }
+
+  .return-button{
+    font-size: 28px;
+  }
+
+  .return-button{
+    margin: 0px;
+  }
+  .project-buttons a{
+    margin: 0px;
+  }
+  .project-buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media all and (min-width: 1650px){
+  .project-page-content{
+    margin-right: 20%;
+  }
+  .project-hero-image{
+    margin-left: 20%
+  }
+  .project-hero-image img{
+    width: 350px;
+  }
+  .project-page-content h1{
+    font-size: 65px;
+  }
+  .project-description-container p{
+    font-size: 30px;
+  }
+  .project-description-container{
+    height: 400px
+  }
+}
+
+
 
