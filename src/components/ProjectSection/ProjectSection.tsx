@@ -2,6 +2,7 @@ import Project from "./Project";
 //Images
 import PortfolioThumbnail from "../../assets/Images/Project Thumbnails/Portfolio_Thumbnail.png";
 import JillsPortfolio from '../../assets/Images/Project Thumbnails/Jill Johnson_Thumbnail.png';
+import JoshDollar from '../../assets/Images/Project Thumbnails/JoshDollar_Thumbnail.png'
 import ComingSoon from "../../assets/Images/Project Thumbnails/Coming Soon_Thumbnail.png";
 
 function ProjectSection() {
@@ -11,21 +12,24 @@ function ProjectSection() {
       <Project
       projectDescription={"This website is a fictional photography portfolio website for a fake photographer named Jill Johnson. This website includes a contact  form, services page, and more. Check it out!"}
         projectName={"Jill Johnsons Portfolio"}
-        languages={["HTML", "CSS", "JS", "React"]}
+        languages={["HTML", "CSS", "TS", "REACT"]}
         projectText={"A fictional website of a photographer's portfolio website."}
         src={JillsPortfolio}
-        alt={"Project Coming Soon"}
+        alt={"Jill Johnsons Portfolio"}
         wireframeurl={"https://www.figma.com/file/g0AIZB8YDcAx1aDvLbLsUD/Jill-Johnson's-Portfolio?type=design&node-id=0%3A1&mode=design&t=7hicfErmzi2FbK7R-1"}
         siteurl={"https://joshuatsmith96.github.io/Jill-Johnsons-Portfolio/"}
         codeurl={"https://github.com/joshuatsmith96/Jill-Johnsons-Portfolio"}
       />
       <Project
-      projectDescription={""}
-        projectName={"Project Coming Soon"}
-        languages={["None"]}
-        projectText={"Project Coming Soon"}
-        src={ComingSoon}
-        alt={"Project Coming Soon"}
+      projectDescription={"This is my take on BitCoins website, but instead I've named it Josh Dollar (I bet you'll never guess why I named it that)!"}
+        projectName={"Joshdollar"}
+        languages={["HTML", "CSS", "TS", "REACT"]}
+        projectText={"This is my take on BitCoins website, but instead I've named it Josh Dollar (I bet you'll never guess why I named it that)! "}
+        src={JoshDollar}
+        alt={"Josh Dollar"}
+        wireframeurl={"https://www.figma.com/file/5x9l6jxuWAETBXSntJ9OeA/Joshdollar?type=design&node-id=0%3A1&mode=design&t=YmaNt3dfXWXI4oIe-1"}
+        siteurl={"https://joshuatsmith96.github.io/JoshDollars/"}
+        codeurl={"https://github.com/joshuatsmith96/JoshDollars"}
       />
       <Project
       projectDescription={""}
