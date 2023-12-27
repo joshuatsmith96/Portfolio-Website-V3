@@ -33,12 +33,12 @@ function ProjectSection() {
         codeurl={"https://github.com/joshuatsmith96/JoshDollars"}
       />
       <Project
-      projectDescription={"This project is my take on a Pizza Restaurant! Coming Soon..."}
+      projectDescription={"This website was my take on a restaurant that serves pizza, burgers, and more! A simple design that, like all of my other projects, demonstrates my ability to follow a design"}
         projectName={"Biggies Pizza"}
         languages={["HTML", "CSS", "TS", "REACT"]}
-        projectText={"This project is my take on a Pizza Restaurant! Coming Soon..."}
+        projectText={"This website was my take on a restaurant that serves pizza, burgers, and more! A simple design that, like all of my other projects, demonstrates my ability to follow a design"}
         src={Biggies}
-        alt={"Project Coming Soon"}
+        alt={"Biggies Pizza"}
         wireframeurl={"https://www.figma.com/file/YjuHmdXjszFXwRwyGeCEsB/Biggies-Pizza?type=design&node-id=44%3A759&mode=design&t=elcRp4vZAtbNxbTP-1"}
         siteurl={"https://joshuatsmith96.github.io/Biggies-Pizza/"}
         codeurl={"https://github.com/joshuatsmith96/Biggies-Pizza"}

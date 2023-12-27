@@ -3,19 +3,28 @@ import "../../AnimationStyles.css";
 
 function HeroSection() {
 
+
   return (
     <div className="HeroSection">
       <div id="header-intro">
         <p>Hello, I'm</p>
         <br />
-        <h1>Joshua</h1>
-      </div>
-      <div id="cover">
-
+        <div className="wrapper nine">
+        <div>
+            <h1 className="rotate">
+                <span>J</span>
+                <span>O</span>
+                <span>S</span>
+                <span>H</span>
+                <span>U</span>
+                <span>A</span>
+            </h1>
+        </div>
+    </div>
       </div>
       <div className="AllCircles">
         <Circle
-        id={"circ1"}
+          id={"circ1"}
           color={1}
           width={"80px"}
           height={"80px"}
@@ -25,7 +34,7 @@ function HeroSection() {
           movement={"circleMove2"}
         />
         <Circle
-        id={"circ2"}
+          id={"circ2"}
           color={3}
           width={"160px"}
           height={"160px"}
@@ -35,7 +44,7 @@ function HeroSection() {
           movement={"circleMove1"}
         />
         <Circle
-        id={"circ3"}
+          id={"circ3"}
           color={4}
           width={"80px"}
           height={"80px"}
@@ -45,7 +54,7 @@ function HeroSection() {
           movement={"circleMove3"}
         />
         <Circle
-        id={"circ4"}
+          id={"circ4"}
           color={1}
           width={"200px"}
           height={"200px"}
@@ -55,7 +64,7 @@ function HeroSection() {
           movement={"circleMove2"}
         />
         <Circle
-        id={"circ5"}
+          id={"circ5"}
           color={2}
           width={"100px"}
           height={"100px"}
@@ -65,7 +74,7 @@ function HeroSection() {
           movement={"circleMove1"}
         />
         <Circle
-        id={"circ6"}
+          id={"circ6"}
           color={2}
           width={"50px"}
           height={"50px"}
@@ -75,7 +84,7 @@ function HeroSection() {
           movement={"circleMove3"}
         />
         <Circle
-        id={"circ7"}
+          id={"circ7"}
           color={2}
           width={"50px"}
           height={"50px"}
