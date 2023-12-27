@@ -11,7 +11,7 @@ function AboutMe() {
         <div className="reveal aboutMe">
         <h1 id="about-me-header2">A little about me</h1>
           <p>
-            My name is Joshua Smith! I am a Web Designer and Developer, US Army Veteran, and avid cheese eater. This is just some filler text until I figure out what to put here (my wife told me lorem ipsum gives her a mild stroke).
+            My name is Joshua Smith! I am a Web Designer / Developer, and a U.S. Army Veteran. I have over 6 years of experience in the field of technology in various positions to include IT Support, Network Specialist, Satellite Technician, and Web Manager (with roles such as updating site styles with CSS, or adding functionality with JavaScript).<br/><br/>My favorite part about web development is that you can turn an idea into a functional piece of art. Taking ideas and turning them into realities is what its all about!
           </p>
         </div>
       </section>
