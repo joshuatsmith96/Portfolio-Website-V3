@@ -2,7 +2,8 @@ import Project from "./Project";
 //Images
 import PortfolioThumbnail from "../../assets/Images/Project Thumbnails/Portfolio_Thumbnail.png";
 import JillsPortfolio from '../../assets/Images/Project Thumbnails/Jill Johnson_Thumbnail.png';
-import JoshDollar from '../../assets/Images/Project Thumbnails/JoshDollar_Thumbnail.png'
+import JoshDollar from '../../assets/Images/Project Thumbnails/JoshDollar_Thumbnail.png';
+import Biggies from '../../assets/Images/Project Thumbnails/Biggies Pizza.png'
 import ComingSoon from "../../assets/Images/Project Thumbnails/Coming Soon_Thumbnail.png";
 
 function ProjectSection() {
@@ -36,8 +37,11 @@ function ProjectSection() {
         projectName={"Biggies Pizza"}
         languages={["HTML", "CSS", "TS", "REACT"]}
         projectText={"This project is my take on a Pizza Restaurant! Coming Soon..."}
-        src={ComingSoon}
+        src={Biggies}
         alt={"Project Coming Soon"}
+        wireframeurl={"https://www.figma.com/file/YjuHmdXjszFXwRwyGeCEsB/Biggies-Pizza?type=design&node-id=44%3A759&mode=design&t=elcRp4vZAtbNxbTP-1"}
+        siteurl={"https://joshuatsmith96.github.io/Biggies-Pizza/"}
+        codeurl={"https://github.com/joshuatsmith96/Biggies-Pizza"}
       />
       <Project
         projectName={"Portfolio Website"}
