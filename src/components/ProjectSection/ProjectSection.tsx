@@ -32,10 +32,10 @@ function ProjectSection() {
         codeurl={"https://github.com/joshuatsmith96/JoshDollars"}
       />
       <Project
-      projectDescription={""}
-        projectName={"Project Coming Soon"}
-        languages={["None"]}
-        projectText={"Project Coming Soon"}
+      projectDescription={"This project is my take on a Pizza Restaurant! Coming Soon..."}
+        projectName={"Biggies Pizza"}
+        languages={["HTML", "CSS", "TS", "REACT"]}
+        projectText={"This project is my take on a Pizza Restaurant! Coming Soon..."}
         src={ComingSoon}
         alt={"Project Coming Soon"}
       />
