@@ -179,7 +179,7 @@ h1{
   color: white;
 }
 
-.ContactForm button{
+#form-submit{
   font-size: 16px;
   padding: 15px;
   padding-left: 10px;
@@ -746,6 +746,7 @@ h1{
   padding-left: 40px;
   padding-right: 40px;
   background-color: rgb(180, 180, 180, .4);
+  text-decoration: none;
 }
 
 .project-page-info{
@@ -1070,7 +1071,7 @@ h1{
     font-size: 20px;
   }
 
-  .ContactForm button{
+  #form-submit{
     padding: 20px;
     font-size: 20px;
   }

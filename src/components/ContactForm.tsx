@@ -3,7 +3,39 @@ import emailjs from "@emailjs/browser";
 
 
 function ContactForm() {
+    function validateForm(){
+        let allInputs = document.getElementsByTagName("input")
+        let textarea = document.getElementsByTagName("textarea")
+        let boolean;
+        for(let i=0; i<=allInputs.length-1; i++){
+            if(allInputs[i].value === ""){
+                //Prevent from submitting
+                boolean = false;
+                allInputs[i].setAttribute("style", "border: solid; color: red;")
+            } else {
+                boolean = true;
+                allInputs[i].setAttribute("style", "")
+            }
+        }
 
+        if(textarea[0].value === ""){
+            boolean = false;
+            textarea[0].setAttribute("style", "border: solid; color: red;")
+        } else {
+            boolean = true;
+            textarea[0].setAttribute("style", "")
+        }
+
+        if(boolean === true){
+            sendEmail()
+            //Make "Message Sent" div visible, and the form invisible
+            document.getElementsByTagName("form")[0].style.display="none";
+            document.getElementById("d1")!.innerHTML = "Message Sent!"
+            document.getElementById("d2")!.innerHTML = "I'll get back to you soon!"
+        }
+    }
+
+    
     const form: any = useRef();
 
     const sendEmail = () => {
@@ -26,9 +58,9 @@ function ContactForm() {
 
     return (
         <div className="ContactForm">
-            <h2>Want to chat?</h2>
-            <p>Fill out the form below!</p>
-            <form ref={form} onSubmit={sendEmail}>
+            <h2 id="d1">Want to chat?</h2>
+            <p id="d2" >Fill out the form below!</p>
+            <form ref={form}>
                 <div className="name-inputs">
                     <input type="text" placeholder="Name" name="user_name" />
                 </div>
@@ -40,7 +72,7 @@ function ContactForm() {
                 </div>
                 <textarea placeholder="Enter Message Here" name="message" />
                 <div className="center">
-                    <button type="submit">Send Message</button>
+                    <a id="form-submit" onClick={validateForm}>Send Message</a>
                 </div>
             </form>
         </div>
