@@ -36,7 +36,7 @@ function Project(props: Props) {
                     <h1>{props.projectName}</h1>
                     <p>{props.projectText}</p>
                     <div className="project-button-container">
-                    <Link className='Project-Button' to={"/Portfolio-Website-V3/Project"} state={{ data: projectdata }}>View Project</Link>
+                    <Link className='Project-Button' to={"/Project"} state={{ data: projectdata }}>View Project</Link>
                     </div>
                 </div>
             </div>
