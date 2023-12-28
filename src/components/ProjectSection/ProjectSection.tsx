@@ -16,7 +16,7 @@ function ProjectSection() {
         projectText={
           "This project is the website you are currently viewing, my Portfolio Website!"
         }
-        languages={["HTML", "CSS", "JS", "React"]}
+        languages={["HTML", "CSS", "TS", "React.ts"]}
         projectDescription={"This project is the website you are currently viewing, my Portfolio Website!\
         If you're interested in the inner workings of this website, please check out the wireframe and code \
          buttons below. Otherwise, go back and view my other projects."}
@@ -28,7 +28,7 @@ function ProjectSection() {
       <Project
       projectDescription={"This website is a fictional photography portfolio website for a fake photographer named Jill Johnson. This website includes a contact  form, services page, and more. Check it out!"}
         projectName={"Jill Johnsons Portfolio"}
-        languages={["HTML", "CSS", "TS", "REACT"]}
+        languages={["HTML", "CSS", "TS", "React.ts"]}
         projectText={"A fictional website of a photographer's portfolio website."}
         src={JillsPortfolio}
         alt={"Jill Johnsons Portfolio"}
@@ -39,7 +39,7 @@ function ProjectSection() {
       <Project
       projectDescription={"This is my take on BitCoins website, but instead I've named it Josh Dollar (I bet you'll never guess why I named it that)!"}
         projectName={"Joshdollar"}
-        languages={["HTML", "CSS", "TS", "REACT"]}
+        languages={["HTML", "CSS", "TS", "React.ts"]}
         projectText={"This is my take on BitCoins website, but instead I've named it Josh Dollar (I bet you'll never guess why I named it that)! "}
         src={JoshDollar}
         alt={"Josh Dollar"}
@@ -50,7 +50,7 @@ function ProjectSection() {
       <Project
       projectDescription={"This website was my take on a restaurant that serves pizza, burgers, and more! A simple design that, like all of my other projects, demonstrates my ability to follow a design."}
         projectName={"Biggies Pizza"}
-        languages={["HTML", "CSS", "TS", "REACT"]}
+        languages={["HTML", "CSS", "TS", "React.ts"]}
         projectText={"This website was my take on a restaurant that serves pizza, burgers, and more!"}
         src={Biggies}
         alt={"Biggies Pizza"}
@@ -61,7 +61,7 @@ function ProjectSection() {
       <Project
       projectDescription={"View my old portfolio website with some (outdated) projects of mine."}
         projectName={"Joshuas Portfolio 2022 - 2023"}
-        languages={["HTML", "CSS", "TS", "REACT"]}
+        languages={["HTML", "CSS", "JS", "React.js"]}
         projectText={"My old portfolio website from mid 2022."}
         src={OldPortfolio1}
         alt={"Old Portfolio"}
