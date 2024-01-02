@@ -5,7 +5,7 @@ import JillsPortfolio from '../../assets/Images/Project Thumbnails/Jill Johnson_
 import JoshDollar from '../../assets/Images/Project Thumbnails/JoshDollar_Thumbnail.png';
 import Biggies from '../../assets/Images/Project Thumbnails/Biggies Pizza.png'
 import OldPortfolio1 from '../../assets/Images/Project Thumbnails/OldPortfolio1.png'
-// import ComingSoon from "../../assets/Images/Project Thumbnails/Coming Soon_Thumbnail.png";
+import ComingSoon from "../../assets/Images/Project Thumbnails/Coming Soon_Thumbnail.png";
 
 function ProjectSection() {
   return (
@@ -57,6 +57,15 @@ function ProjectSection() {
         wireframeurl={"https://www.figma.com/file/YjuHmdXjszFXwRwyGeCEsB/Biggies-Pizza?type=design&node-id=44%3A759&mode=design&t=elcRp4vZAtbNxbTP-1"}
         siteurl={"https://joshuatsmith96.github.io/Biggies-Pizza/"}
         codeurl={"https://github.com/joshuatsmith96/Biggies-Pizza"}
+      />
+      <Project
+      projectDescription={"Roof Smith is an informational website for a fictional roofing company. Currently still in development, but feel free to see where I am at with it right now by checking the wireframe!"}
+        projectName={"Roof Smith"}
+        languages={["HTML", "CSS", "TS", "React.ts"]}
+        projectText={"Roof Smith is an informational website for a fictional roofing company."}
+        src={ComingSoon}
+        alt={"Biggies Pizza"}
+        wireframeurl={"https://www.figma.com/file/oGz3nxXJDSNjdvMZhJrFlc/Roof-Smith?type=design&node-id=0%3A1&mode=design&t=auzWTecXIlFm3hpc-1"}
       />
       <Project
       projectDescription={"View my old portfolio website with some (outdated) projects of mine."}
