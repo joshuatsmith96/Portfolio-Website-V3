@@ -23,6 +23,18 @@
     to   { opacity: 1; }
 }
 
+#header-intro p{
+    animation: fadein 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+
+#header-intro h1{
+    animation: fadein 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
 /*************************** FADE IN LEFT **********************************/
 
 @-webkit-keyframes showHide { /* Chrome, Safari */
@@ -46,11 +58,88 @@
     100% {width:50%}
 }
 
+/***************************************** Background fluctuation *****************************************/
+
+/* @keyframes openup {
+    0%{width: 0%; height: 0%;}
+    100%{width:100%; height: 100%;}
+} */
+
+@keyframes fluctuate {
+    0%{
+        background: rgb(10,25,47);
+    }
+
+    50%{
+        background: rgb(82, 117, 168);
+        border: solid;
+    }
+
+    100%{
+        background: rgb(10,25,47);
+        border: none;
+    }
+}
+
+.HeroSection{
+    animation: fluctuate 8s infinite;
+}
+
+.goup:hover{
+    transition: .5s;
+    cursor: pointer;
+}
+
+.goup:nth-child(1):hover{
+    color: rgb(10,25,47);;
+    font-weight: bold;
+}
+
+.goup:nth-child(2):hover{
+    color: rgb(26, 60, 110);;
+    font-weight: bold;
+}
+
+.goup:nth-child(3):hover{
+    color: rgb(35, 78, 143);;
+    font-weight: bold;
+}
+
+.goup:nth-child(4):hover{
+    color: rgb(54, 120, 219);;
+    font-weight: bold;
+}
+
+.goup:nth-child(5):hover{
+    color: rgb(97, 157, 247);
+    font-weight: bold;
+}
+.goup:nth-child(6):hover{
+    color: rgb(122, 175, 253);
+    font-weight: bold;
+}
+.goup:nth-child(7):hover{
+    color: rgb(168, 203, 255);
+    font-weight: bold;
+}
+.goup:nth-child(8):hover{
+    color: rgb(214, 229, 252);
+    font-weight: bold;
+}
+.goup:nth-child(9):hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
 /***********************************************************************************************************/
 .rotate span {
     display: inline-flex;
     animation: rotate 2s infinite;
 }
+
+.spin{
+    animation: rotate 2s;
+}
+
 @keyframes rotate {
     0%,
     75% {
