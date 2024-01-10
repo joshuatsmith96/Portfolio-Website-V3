@@ -72,12 +72,10 @@
 
     50%{
         background: rgb(82, 117, 168);
-        border: solid;
     }
 
     100%{
         background: rgb(10,25,47);
-        border: none;
     }
 }
 

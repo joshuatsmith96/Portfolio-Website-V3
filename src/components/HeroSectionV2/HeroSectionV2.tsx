@@ -1,4 +1,3 @@
-import CircleV2 from "./CircleV2";
 import "../../AnimationStyles.css";
 
 function HeroSectionV2() {
