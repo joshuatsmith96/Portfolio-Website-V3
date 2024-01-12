@@ -1,10 +1,11 @@
 function AboutMe() {
+
   return (
     <div className="aboutMeContainer">
       <section id="about-me-image-and-title">
         <div className="reveal aboutMe">
           <h1 id="about-me-header1">A little about me</h1>
-          <div id="profile-image"></div>
+          <div id="profile-image" className="shadow-fluctuate"></div>
         </div>
       </section>
       <section id="about-me-info">

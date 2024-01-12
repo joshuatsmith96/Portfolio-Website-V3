@@ -2,9 +2,16 @@ import "../../AnimationStyles.css";
 
 function HeroSectionV2() {
 
+
   function letterClicked(e:any){
-    let span = e.target;
-    span.setAttribute("class", "goup spin")
+    //Return all to default classes
+    let allSpans = document.getElementById("header-intro")!.children[0].children
+    for(let i=0; i<allSpans.length; i++){
+      allSpans[i].setAttribute('class', 'goup')
+    }
+
+    e.target.setAttribute("class", "goup")
+    e.target.setAttribute("class", "goup spin")
   }
 
   return (
@@ -16,8 +23,8 @@ function HeroSectionV2() {
             <span onClick={(e) => letterClicked(e)} className="goup">l</span>
             <span onClick={(e) => letterClicked(e)} className="goup">l</span>
             <span onClick={(e) => letterClicked(e)} className="goup">o</span>
-            <span onClick={(e) => letterClicked(e)} className="goup">,</span>
-            <span onClick={(e) => letterClicked(e)} className="goup"> I</span>
+            <span onClick={(e) => letterClicked(e)} className="goup">, </span>
+            <span onClick={(e) => letterClicked(e)} className="goup">I</span>
             <span onClick={(e) => letterClicked(e)} className="goup">'</span>
             <span onClick={(e) => letterClicked(e)} className="goup">m</span>
         </p>
