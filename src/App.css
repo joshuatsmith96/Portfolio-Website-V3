@@ -1281,6 +1281,7 @@ h1{
 @media all and (min-width: 1300px){
   #header-intro p{
     font-size: 40px;
+    position: absolute;
   }
 
   #header-intro h1{
@@ -1349,7 +1350,7 @@ h1{
   }
 
   #header-intro h1{
-    font-size: 190px;
+    font-size: 140px;
   }
 
   .project-img-container img{
