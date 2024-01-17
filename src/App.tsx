@@ -8,9 +8,6 @@ function App() {
   reveal()
   return (
     <div className='App'>
-      <div className="animation-container">
-          
-      </div>
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/Project" Component={ProjectPage} />
