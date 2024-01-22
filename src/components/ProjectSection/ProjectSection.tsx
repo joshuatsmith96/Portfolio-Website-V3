@@ -28,6 +28,17 @@ function ProjectSection() {
         codeurl={"https://github.com/joshuatsmith96/Portfolio-Website-V3"}
       />
       <Project
+      lastUpdate={"Last update: 1/22/2024"}
+      projectDescription={"Roof Smith is an informational website for a fictional roofing company. Currently still in development, but feel free to see where I am at with it right now by checking the wireframe and GitHub pages! This site is special in the sense that I have added custom animations using 0 animation frameworks."}
+        projectName={"Roof Smith"}
+        languages={["HTML", "CSS", "TS", "React.ts"]}
+        projectText={"Roof Smith is an informational website for a fictional roofing company. This website is currently still in development, but viewable to the public."}
+        src={RoofSmith}
+        alt={"Roof Smith"}
+        siteurl={"https://joshuatsmith96.github.io/Roof-Smith/"}
+        wireframeurl={"https://www.figma.com/file/oGz3nxXJDSNjdvMZhJrFlc/Roof-Smith?type=design&node-id=0%3A1&mode=design&t=auzWTecXIlFm3hpc-1"}
+      />
+      <Project
       lastUpdate={"Last update: 12/28/2023"}
       projectDescription={"This website is a fictional photography portfolio website for a fake photographer named Jill Johnson. This website includes a contact  form, services page, and more. Check it out!"}
         projectName={"Jill Johnsons Portfolio"}
@@ -62,17 +73,6 @@ function ProjectSection() {
         wireframeurl={"https://www.figma.com/file/YjuHmdXjszFXwRwyGeCEsB/Biggies-Pizza?type=design&node-id=44%3A759&mode=design&t=elcRp4vZAtbNxbTP-1"}
         siteurl={"https://joshuatsmith96.github.io/Biggies-Pizza/"}
         codeurl={"https://github.com/joshuatsmith96/Biggies-Pizza"}
-      />
-      <Project
-      lastUpdate={"Last update: 1/22/2024"}
-      projectDescription={"Roof Smith is an informational website for a fictional roofing company. Currently still in development, but feel free to see where I am at with it right now by checking the wireframe and GitHub pages! This site is special in the sense that I have added custom animations using 0 animation frameworks."}
-        projectName={"Roof Smith"}
-        languages={["HTML", "CSS", "TS", "React.ts"]}
-        projectText={"Roof Smith is an informational website for a fictional roofing company. This website is currently still in development, but viewable to the public."}
-        src={RoofSmith}
-        alt={"Roof Smith"}
-        siteurl={"https://joshuatsmith96.github.io/Roof-Smith/"}
-        wireframeurl={"https://www.figma.com/file/oGz3nxXJDSNjdvMZhJrFlc/Roof-Smith?type=design&node-id=0%3A1&mode=design&t=auzWTecXIlFm3hpc-1"}
       />
       <Project
       lastUpdate={"Last update: 8/12/2023"}
