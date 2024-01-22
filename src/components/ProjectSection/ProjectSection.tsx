@@ -5,7 +5,7 @@ import JillsPortfolio from '../../assets/Images/Project Thumbnails/Jill Johnson_
 import JoshDollar from '../../assets/Images/Project Thumbnails/JoshDollar_Thumbnail.png';
 import Biggies from '../../assets/Images/Project Thumbnails/Biggies Pizza.png'
 import OldPortfolio1 from '../../assets/Images/Project Thumbnails/OldPortfolio1.png'
-import ComingSoon from "../../assets/Images/Project Thumbnails/Coming Soon_Thumbnail.png";
+// import ComingSoon from "../../assets/Images/Project Thumbnails/Coming Soon_Thumbnail.png";
 import RoofSmith from '../../assets/Images/Project Thumbnails/Roof_Smith_Thumbnail.png';
 
 function ProjectSection() {
