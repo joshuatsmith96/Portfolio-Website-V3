@@ -11,6 +11,7 @@ interface Props {
     wireframeurl?: any,
     codeurl?: any,
     siteurl?: any,
+    lastUpdate?: string
 }
 
 function Project(props: Props) {
@@ -26,6 +27,8 @@ function Project(props: Props) {
         projectdesc: props.projectDescription
     }
 
+    
+
     return (
         <div className="Project-Container">
             <div className="reveal Project">
@@ -34,6 +37,7 @@ function Project(props: Props) {
                 </div>
                 <div className="project-info">
                     <h1>{props.projectName}</h1>
+                    <h4>{props.lastUpdate}</h4>
                     <p>{props.projectText}</p>
                     <div className="project-button-container">
                     <Link className='Project-Button' to={"/Project"} state={{ data: projectdata }}>View Project</Link>

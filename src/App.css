@@ -23,6 +23,12 @@ h1{
   font-weight: 500;
 }
 
+h4{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
 .center{
   display: flex;
   flex-direction: column;
@@ -1128,6 +1134,12 @@ h1{
 }
 
 @media all and (min-width: 900px){
+
+  h4{
+    font-size: 22px;
+    text-align: left;
+  }
+
   .ContactForm input{
     width: 600px;
   }
@@ -1218,8 +1230,9 @@ h1{
   }
 
   .project-info p{
+    margin-bottom: 30px;
+    padding: 0px;
     text-align: left;
-    padding: 10px 10px;
     width: 100%;
   }
 
