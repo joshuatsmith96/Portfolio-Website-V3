@@ -11,6 +11,8 @@ function DividerDots() {
         <div className="reveal dot"></div>
         <div className="reveal dot"></div>
         <div className="reveal dot"></div>
+        <div className="reveal dot"></div>
+        <div className="reveal dot"></div>
       </div>
     );
 }
