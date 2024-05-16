@@ -12,7 +12,7 @@ function AboutMe() {
         <div className="reveal aboutMe">
         <h1 id="about-me-header2">A little about me</h1>
           <p>
-            My name is Joshua Smith! I am a Web Designer / Developer, and a U.S. Army Veteran. I have over 6 years of experience in the field of technology in various positions to include IT Support, Network Specialist, Satellite Technician, and Web Manager (with roles such as updating site styles with CSS, or adding functionality with JavaScript).<br/><br/>My favorite part about web development is that you can turn an idea into a functional piece of art. Taking ideas and turning them into realities is what its all about!
+          Welcome to my portfolio! I'm Josh, a dedicated web developer with a passion for crafting engaging online experiences. With prior professional experience and a knack for professional grade projects, I specialize in designing and implementing new web pages that captivate and inspire. Explore my work and let's create something amazing together! <br /><br />In addition to my role as a seasoned web developer, I bring to the table a background as a U.S. Veteran, where I honed my expertise in communication technologies, network technologies, and gained substantial experience in IT help desk operations.
           </p>
         </div>
       </section>

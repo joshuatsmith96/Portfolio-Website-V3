@@ -23,13 +23,13 @@ function Experience() {
           </div>
           <div className="experience-info">
           <div className="info reveal">
-              <h2>Midwest Veterinary Supply Company</h2>
+              <h2>Midwest Veterinary Supply, Inc.</h2>
               <p>Junior Web Developer</p>
               <p>2024 - Current</p>
               <p>HTML, CSS, JavaScript, React</p>
             </div>
             <div className="info reveal">
-              <h2>Daily Printing</h2>
+              <h2>Daily Printing, Inc.</h2>
               <p>Storefront Administrator & Variable Data Programmer</p>
               <p>2021 - Current</p>
               <p>HTML, CSS, JavaScript, Python</p>
