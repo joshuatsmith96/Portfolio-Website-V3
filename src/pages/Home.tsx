@@ -2,6 +2,7 @@
 import '../App.css'
 import "../PageScrollStyles.css"
 //Scripts
+import { useEffect, useState } from 'react'
 import { Parallax, Background } from 'react-parallax'
 //Sections
 // import HeroSection from '../components/HeroSection/HeroSection'
@@ -17,6 +18,24 @@ import ProjectSection from '../components/ProjectSection/ProjectSection.tsx'
 import BackgroundImageMobile from '../assets/Images/Background V3.jpg'
 
 function Home() {
+
+
+  //calling api
+const [list, setList] = useState([])
+
+//Seperate List Data Into Useable Segments
+
+useEffect(() => {
+    fetch('http://localhost:1337/api/landing-pages')
+    .then((response) => response.json())
+    .then((data) => doSomething(data))
+}, [])
+
+const doSomething =(data:[]) => {
+  console.log(data)
+}
+
+//end calling api
 
   // function isInViewport(element:any) {
   //   var rect = element.getBoundingClientRect();
